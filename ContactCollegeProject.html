@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('https://img.freepik.com/free-photo/top-view-blue-monday-concept-composition-with-telephone_23-2149139104.jpg');
+        color: #333;
+    }
+
+    h1 {
+        font-size: 48px;
+        color: #ff7f50;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        margin-top: 0;
+    }
+
+    h2 {
+        font-size: 36px;
+        color: #ff5722;
+        text-align: center;
+        margin: 0;
+    }
+
+    @keyframes glow {
+        from {
+            text-shadow: 0 0 10px #0cc6f5, 0 0 20px rgb(237, 17, 127);
+        }
+        to {
+            text-shadow: 0 0 20px #8c1476 , 0 0 30px #4a148c;
+        }
+    }
+
+    .contact-us {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+    }
+
+    .contact-us h1 {
+        text-align: center;
+        color: #333;
+    }
+
+    .contact-us p {
+        text-align: center;
+        color: #666;
+    }
+
+    .contact-info {
+        margin-bottom: 20px;
+    }
+
+    .info-item h3 {
+        margin: 0;
+        color: #333;
+    }
+
+    .info-item p {
+        margin: 5px 0;
+        color: #666;
+    }
+
+    .contact-form label {
+        display: block;
+        margin: 10px 0 5px;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .panjab, .uiet {
+        height: 100px;
+        width: 100px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    header, .uni {
+        background-color: #E0F7FA;
+        color: #004D40;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .uni {
+        text-align: center;
+        color: rgb(204, 12, 12);
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .contact-form textarea {
+        resize: vertical;
+    }
+
+    .contact-form button {
+        width: 100%;
+        padding: 10px;
+        background-color: #ff5722;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+        background-color: #e64a19;
+    }
+
+    a {
+        color: #ff7f50;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+<body>
+    <header>
+        <div class="container">
+            <h1>Training and Placement Management</h1>
+            <img class="panjab" src="https://upload.wikimedia.org/wikipedia/en/9/96/Panjab_University_logo.png" alt="Panjab University Logo">
+            <h2>University Institute of Engineering & Technology <br>Panjab University, Chandigarh</h2>
+            <img class="uiet" src="https://upload.wikimedia.org/wikipedia/en/9/94/UIET_logo.png" alt="UIET Logo">
+        </div>
+    </header>
+    
+    <div class="contact-us">
+        <h1>Contact Us</h1>
+        <p>Have questions or need help? Reach out to us!</p>
+        
+        <div class="contact-info">
+            <div class="info-item">
+                <h3>Email Us</h3>
+                <p><a href="mailto:support@trainingplacement.com">support@trainingplacement.com</a></p>
+            </div>
+            <div class="info-item">
+                <h3>Call Us</h3>
+                <p><a href="tel:+0172-2541242">0172-2541242</a></p>
+            </div>
+            <div class="info-item">
+                <h3>Visit Us</h3>
+                <p>University Institute of Engineering and Technology<br>
+                    Sector 25, South Campus,<br>
+                    Panjab University,<br>
+                    Chandigarh (Union Territory),<br>
+                    INDIA. PINCODE: 160014</p>
+            </div>
+        </div>
+
+        <form class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>

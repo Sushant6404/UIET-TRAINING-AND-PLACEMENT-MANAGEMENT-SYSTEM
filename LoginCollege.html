@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        h1{
+            font-size: 48px;
+        color: #ff7f50;
+         text-shadow:2px 2px 4px rgba(0,0,0,0.5);
+        }
+        header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            
+            background-image: url(http://getwallpapers.com/wallpaper/full/7/c/6/765090-most-popular-technology-background-images-1920x1080-hd-for-mobile.jpg);
+        
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #ffe4e1;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+        color:#b22222;
+         text-shadow:2px 2px 4px rgba(0,0,0,0.5);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background: #4cae4c;
+        }
+        a{
+            color: rgb(42, 159, 165);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="https://uiet.puchd.ac.in/?page_id=323"><img style="height: 150px;padding:0%;margin: 0px;" src="https://upload.wikimedia.org/wikipedia/en/9/94/UIET_logo.png"></a>
+            <a href="https://cpc.puchd.ac.in/"><img style="height: 150px;padding-left: 79%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCrWmU896E7DxoAvS2Z_V9BW09UlXZrE1fSxf_KqJ8Jg&s"></a>
+            </div>
+        <div>
+        <h1>TRAINING AND PLACEMENT MANAGEMENT SYSTEM</h1>
+        <h3>UNIVERSITY INSTITUTE OF ENGINEERING AND TECHNOLOGY</h3>
+        <h3>PANJAB UNIVERSITY CHANDIGARH</h3>
+        </div>
+        <h1><u>
+            WELCOME TO LOGIN PORTAL
+        </u></h1>
+        <ul>
+            <li><a href="#REGISTERED">REGISTERED CANDIDATE'S</a></li>
+            <li><a href="#NEW">NEW CANDIDATE'S</a></li>
+        </ul>
+
+    </header>
+
+<div class="container">
+    <h2>LOGIN FOR REGISTRATED CANDIDATE'S</h2>
+    <form action="submit_form.php" method="post">
+        <section id="REGISTERED">
+            <label for="name">CANDIDATE'S ID :</label>
+            <input type="text" id="name"placeholder="Enter your Candidate's ID"><br>
+            <label for="date">DATE OF BIRTH :</label>
+            <input type="date" id="date"placeholder="ENTER DATE OF BIRTH">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">PASSWORD:</label>
+            <input type="password" id="password" placeholder="ENTER PASSWORD"><br>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+    
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+    
+            <input type="submit" value="Submit"> 
+        </section>
+    </form>
+</div>
+<div class="container">
+    <h2>LOGIN FOR NEW CANDIDATE'S</h2>
+    <form action=""submit_form.php" method="post">
+        <section id="NEW">
+            <label for="aadhar">AADHAR NUMBER:</label>
+            <input type="number" id="aadhar" placeholder="ENTER AADHAR NUMBER"><br>
+            <label for="name">EMPLOYEE NAME:</label>
+            <input type="text" id="name" placeholder="ENTER CANDIDATE'S NAME"><br>
+            <label for="date">DATE OF BIRTH :</label>
+            <input type="date" id="date"placeholder="ENTER DATE OF BIRTH"><br>
+            <label for="fname">FATHER'S NAME:</label>
+            <input type="text" id="fname" placeholder="ENTER FATHER'S NAME"><br>
+            <label for="mname">MOTHER'S NAME:</label>
+            <input type="text" id="mname" placeholder="ENTER MOTHER'S NAME"><br>
+                        
+            <label for="country">SELECT COUNTRY </label>
+
+            <select id="country">
+                <option value="India">INDIA</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select><br>
+            <label for="address">PARMANENT ADDRESS:</label><br>
+            <textarea id="address" placeholder="ENTER PARMANENT ADDRESS " rows="2"></textarea><br>
+            <label for="file">UPLOAD AADHAR CARD :</label>
+            <input type="file" value="file" id="file"><br>
+
+            <input type="checkbox" id="terms" value="agree">
+            <label for="terms">I agree on terms and conditions.</label><br>
+
+            <input type="submit">
+    
+    </form>
+
+</div>
+<script src="LoginAssignment.js"></script>
+</body>
+</html>
